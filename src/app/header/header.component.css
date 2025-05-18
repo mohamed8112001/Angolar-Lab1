@@ -1,0 +1,106 @@
+/* Header Base */
+.header {
+    background-color: #fff;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 15px 0;
+  }
+  
+  /* Logo */
+  .header .logo h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  /* Navigation Menu */
+  .navmenu {
+    margin-left: auto;
+  }
+  
+  .navmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navmenu ul li {
+    position: relative;
+    white-space: nowrap;
+    padding: 10px 15px;
+  }
+  
+  .navmenu a {
+    display: block;
+    color: #444;
+    font-size: 15px;
+    padding: 8px 10px;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .navmenu a:hover,
+  .navmenu .active {
+    color: #0d6efd;
+  }
+  
+  /* Dropdown */
+  .navmenu .dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    z-index: 99;
+    min-width: 200px;
+  }
+  
+  .navmenu .dropdown:hover > ul {
+    display: block;
+  }
+  
+  .navmenu .dropdown ul li {
+    min-width: 180px;
+  }
+  
+  .navmenu .dropdown ul a {
+    padding: 10px 20px;
+  }
+  
+  /* Deep Dropdown */
+  .navmenu .dropdown .dropdown:hover > ul {
+    display: block;
+    left: 100%;
+    top: 0;
+  }
+  
+  /* CTA Button */
+  .cta-btn {
+    background: #0d6efd;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background: #0056b3;
+    color: #fff;
+  }
+  
+  /* Mobile Navigation Toggle */
+  .mobile-nav-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  

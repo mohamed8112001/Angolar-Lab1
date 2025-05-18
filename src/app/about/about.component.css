@@ -1,0 +1,85 @@
+body {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: color-mix(in srgb, var(--accent-color), transparent 25%);
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+  }
+.about h3 {
+    font-weight: 700;
+    font-size: 1.75rem; /* 28px تقريباً */
+    margin-bottom: 1.25rem; /* 20px */
+  }
+  
+  .about .fst-italic {
+    color: #6c757d; /* بدل color-mix اللي مش مدعوم قوي */
+  }
+  
+  /* قائمة بدون نقاط */
+  .about .content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  
+  /* عناصر القائمة */
+  .about .content ul li {
+    padding-left: 2rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* أيقونة بجانب كل عنصر */
+  .about .content ul i {
+    position: absolute;
+    font-size: 1.25rem; /* 20px */
+    left: 0;
+    top: 0;
+    color: #0d6efd; /* لون أزرق bootstrap */
+  }
+  
+  /* إزالة هامش الفقرة الأخيرة */
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* زر التشغيل المتحرك */
+  .about .pulsating-play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 0.7;
+    }
+  }
+  
